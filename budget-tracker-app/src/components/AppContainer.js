@@ -24,7 +24,7 @@ const AppContainer = () => {
   return (
     <main className="app-container">
       <header className="app-header">
-        <h1 className="heading-main">Budget Tracker App</h1>
+        <h1 className="heading-main">Pocket Tracker App</h1>
       </header>
 
       <Form />
@@ -42,6 +42,7 @@ const AppContainer = () => {
             color: "rgb(148, 228, 228)",
             background: "#52A2BF",
             fontFamily: "Dosis",
+            transform: "translateY(1rem)",
           }}
           onClick={onClickChartHandler}
         >

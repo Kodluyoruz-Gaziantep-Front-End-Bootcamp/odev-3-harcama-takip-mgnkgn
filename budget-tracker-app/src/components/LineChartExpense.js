@@ -28,7 +28,7 @@ const LineChartExpense = () => {
     })
     .map((item) => item.slice(3, 10));
 
-  for (let i = 0; i < datesForExpense.length; i++) {
+  for (let i = datesForExpense.length + 1; i >= 0; i--) {
     data.push({
       name: sortedDates[i],
       "Amount Spent": amountsForExpense[i],

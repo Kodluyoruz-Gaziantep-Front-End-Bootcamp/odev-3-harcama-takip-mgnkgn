@@ -28,7 +28,7 @@ const LineChartIncome = () => {
     })
     .map((item) => item.slice(3, 10));
 
-  for (let i = 0; i < datesForIncome.length; i++) {
+  for (let i = datesForIncome.length; i >= 0; i--) {
     data.push({
       name: sortedDates[i],
       "Amount Earned": amountsForIncome[i],

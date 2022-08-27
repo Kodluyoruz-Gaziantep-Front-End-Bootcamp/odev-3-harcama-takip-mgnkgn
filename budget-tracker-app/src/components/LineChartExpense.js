@@ -24,7 +24,7 @@ const LineChartExpense = () => {
     .sort(function (a, b) {
       a = a.split("/").reverse().join("");
       b = b.split("/").reverse().join("");
-      return a > b ? 1 : a < b ? -1 : 0;
+      return a < b ? 1 : a > b ? -1 : 0;
     })
     .map((item) => item.slice(3, 10));
 
